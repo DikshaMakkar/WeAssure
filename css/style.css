@@ -1,0 +1,303 @@
+/* CSS Reset */
+* {
+  
+  margin: 0;
+  padding-left: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  width: 100%;
+  top:0px;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  top: 0px;
+  left: 0px;
+}
+
+/* Navigation Bar: Logo and image */
+#logo {
+  margin: 3px 4px;
+  width: 22%;
+}
+
+#logo img {
+  height: 5%;
+  box-shadow: 5px 5px 10px pink;
+  width: 30%;
+  margin: 15px 21;
+  border-radius: 69px;
+}
+
+/* Navigation Bar: List styling */
+#navbar ul {
+  display: flex;
+  width: 80%;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 2rem;
+}
+
+#navbar ul li a {
+  color: whitesmoke;
+  display: block;
+  padding: 3px 80px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 555px;
+  top: 0px;
+  left: 0px;
+  /* background-image: url("../img/bg.jpg") no-repeat center center/cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px; */
+}
+
+#home::before {
+  content: "";
+  background: url("../img/highway.jpg") no-repeat center center/cover; 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0px;
+  left: 0px;
+}
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  text-shadow: 3px 4px 5px rgb(209, 204, 204);
+  /* font-family: "Inspiration", cursive; */
+}
+
+#home p {
+  color: white;
+
+  /* font-family: "Caveat", cursive; */
+  /* font-family: 'Shippori Antique B1', sans-serif; */
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Service Section */
+#services-container{
+  background-color: transparent;
+  padding-top: 8%;
+}
+
+#services {
+  margin: 34px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#services .box {
+  border: 2px solid brown;
+  width: 25%;
+  height: 200px;
+  padding: 34px;
+  margin: 2px 6px;
+  border-radius: 23px;
+  background-color: transparent;
+}
+
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+.box img{
+  width: 200px;
+}
+/* Client Section */
+#client-section {
+  position: relative;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/bg2.jfif");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+  height: 300px;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients img {
+  height: 100px;
+  border-radius: 55px;
+}
+
+.client-item {
+  padding: 89px;
+}
+
+#connect{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  /* background-color: rgb(202, 149, 202); */
+}
+#icon{
+display: flex;
+justify-content: center; 
+/* background-color: rgb(228, 194, 228); */
+
+}
+#icon a{
+padding:10px;
+}
+hr{
+  display:flex;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: rgb(101 228 207);
+  color: rgb(242, 221, 224);
+  width: 100%;
+  height: 2px;
+  box-shadow: 5px 5px 12px #10877ad6;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  
+  }
+/* Contact Section */
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(../img/bg3.jfif) no-repeat center center/cover;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 55px;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 3px solid #8622228f;
+  box-shadow: 5px 5px 6px rgb(117, 79, 79);
+  border-radius: 10px;
+}
+
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.form-group{
+  padding-bottom: 10px;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+.greet{
+  font-size: 29px;
+  text-shadow: 6px 6px 6px black;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Nanum Myeongjo", serif;
+}
+.h-secondary {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.8rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid rgb(34, 23, 23);
+  background-color: rgb(238, 198, 198);
+  /* color: white; */
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(143, 64, 64);
+  color: rgb(235, 223, 223);
+  box-shadow: 5px 5px 6px rgb(180, 127, 111);
+}
+
+.center {
+  text-align: center;
+}
