@@ -38,16 +38,18 @@ html{
 
 /* Navigation Bar: Logo and image */
 #logo {
-  margin: 3px 4px;
-  width: 22%;
+  margin: 8px 12px;;
+  width:18%;
+  height: 10%;
 }
 
 #logo img {
-  height: 5%;
-  box-shadow: 5px 5px 10px pink;
+  height: 100%;
+  background-color: rgb(238 191 178);
+  box-shadow: 5px 5px 10px rgb(188 165 159);
   width: 30%;
   margin: 15px 21;
-  border-radius: 69px;
+  border-radius: 55px;
 }
 
 /* Navigation Bar: List styling */
