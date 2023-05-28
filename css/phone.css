@@ -1,49 +1,98 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 8px;
+}
+
 /* Navigation */
-#navbar{
-    flex-direction: column;
-    
+#navbar {
+  flex-direction: column;
 }
 #navbar ul {
-    display: flex;
-    flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+#logo-line {
+  justify-content: center;
+}
+
+#logo {
+  width: 4%;
+}
+
+.vertical-line {
+  margin-left: 2%;
+  width: 1.5px;
+}
+
+.logo-text {
+  display: block;
+  width: 30%;
+  /* justify-content: center; */
+  padding-top: 1%;
+}
 
 #home h1 {
-    font-size: 36px;
+  margin-top: 10%;
+  font-size: 3rem;
 }
 
-#navbar ul li a{
-    font-size: 1.2rem;
-    padding: 0px 9px;
+#navbar ul li a {
+  font-size: 1.2rem;
+  padding: 0px 9px;
 }
 /* Home Section */
-#home{
-    height: 230px; 
-    padding: 3px 68px;
+#home {
+  height: 260px;
+  /* padding: 3px 68px; */
 }
 
-#home::before{
-    height: 474px;
+#home::before {
+  height: 300px;
 }
 
-#home p{
-    font-size: 1rem;
+#home p {
+  font-size: 1rem;
 }
 /* Services Section */
-#services{
-
-    flex-direction: column;
+#services {
+  flex-direction: column;
 }
 
-#services .box{
+#services .box {
   padding: 14px;
   margin: 2px 0;
   margin-bottom: 20px;
 }
 
+span {
+  font-size: 1.3rem;
+  /* padding-bottom: 5%; */
+}
+
+.button {
+  line-height: 26px;
+  height: 30px;
+  /* text-align: center; */
+  width: 60%;
+  /* cursor: pointer; */
+  margin-top: 12%;
+}
+
+.button-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
 /* Client Section */
-#client-section::before {
+/* #client-section::before {
     height: 365px;
 }
 
@@ -61,18 +110,52 @@
     height: auto;
 }
 /* Contact Us Section */
-#contact-box form{
+/* #contact-box form{
     width: 80%;
+} */
+
+.arrow {
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  width: 15px;
+  height: 15px;
 }
 
+#services .box {
+  height: 150px;
+  width: 33%;
+}
+
+#services .box img {
+  /* width: 90%; */
+  height: 40%;
+}
+
+h2 .center {
+  width: 10%;
+  text-overflow: ellipsis;
+}
 /* Footer */
 
 /* Utility Classes */
-.h-primary{
-    font-size: 16px;
+.h-primary {
+  font-size: 16px;
 }
 
-.btn{
-    font-size: 13px;
-    padding: 4px 8px;
+.btn {
+  font-size: 13px;
+  padding: 4px 8px;
+}
+
+#icon img {
+  height: 40px;
+}
+
+#icon a {
+  padding: 1%;
+}
+
+.apply-button {
+  width: 15%;
 }
