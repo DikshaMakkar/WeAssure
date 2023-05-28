@@ -7,17 +7,21 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
+
 }
 
 /* CSS Variables */
 :root {
-  --navbar-height: 59px;
+  /* --navbar-height: 10%; */
 }
 
 /* Navigation Bar */
 #navbar {
   display: flex;
-  width: 100%;
+  height: 10%;
+  /* width: 100%; */
+  /* height: 100%; */
   top:0px;
   align-items: center;
   position: sticky;
@@ -37,30 +41,43 @@ html{
 }
 
 /* Navigation Bar: Logo and image */
+#logo-line{
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
 #logo {
   margin: 2px;
   width:5%;
-  height: 15%;
+  height: 100%;
 }
 
 .vertical-line {
   width: 2px;
   margin-left: 1%;
-  height: 60px; /* Adjust the height as needed */
+  /* height: 80%; */
   background-color: #d2cbcb; /* Adjust the color as needed */
   margin-right: 10px; /* Adjust the spacing as needed */
+  margin-top: 1%;
+  margin-bottom: 1%;
+  /* justify-content: center; */
+
 }
 
 .logo-text{
   font-family: Arial;
-  font-size: large;
+  font-size: 1rem;
   width: 10%;
   color:  #d2cbcb;
+  /* justify-content: center; */
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 #logo img {
   margin-left: 8px;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   margin: 5px;
 }
@@ -96,10 +113,10 @@ html{
 #home {
   display: flex;
   flex-direction: column;
-  padding: 3px 200px;
+  padding: 3px 10%px;
   justify-content: center;
   align-items: center;
-  height: 625px;
+  height: 636px;
   top: 0px;
   left: 0px;
 }
@@ -119,6 +136,15 @@ html{
   left: 0px;
 }
 
+#home h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 32%;
+  font-size: 80px;
+  text-shadow: 3px 4px 5px rgb(209, 204, 204);
+  /* font-family: "Inspiration", cursive; */
+}
+
 #home[data-page="index.html"]::before {
   background-image: url('../img/highway.jpg');
 }
@@ -127,14 +153,7 @@ html{
   background-image: url('../img/career_bg.jpg');
 }
 
-#home h1 {
-  color: white;
-  text-align: center;
-  margin-top: -1%;
-  font-size: 80px;
-  text-shadow: 3px 4px 5px rgb(209, 204, 204);
-  /* font-family: "Inspiration", cursive; */
-}
+
 
 #home p {
   color: white;
@@ -185,14 +204,14 @@ div[class*=box] {
 }
 
 span{
-  font-size:large;
+  font-size:1.3rem;
 }
 
 .button {
   line-height: 50px;
-  height: 50px;
+  /* height: 70%; */
   text-align: center;
-  width: 250px;
+  width: 35%;
   cursor: pointer;
   margin-top: 9%;
 }
@@ -258,6 +277,7 @@ span{
   box-shadow: 5px 3px 10px rgba(146, 141, 137, 0.84);
   width: 23%;
   height: 350px;
+  /* height: 50%; */
   justify-content: center;
   padding: 2%;
   margin: 2px 6px;
@@ -335,8 +355,12 @@ justify-content: center;
 background: transparent;
 
 }
+
+#icon img{
+  height: 100px
+}
 #icon a{
-padding:10px;
+padding:1%;
 
 background: transparent;
 }
@@ -389,7 +413,7 @@ footer {
 }
 
 .greet{
-  font-size: 29px;
+  font-size: 2rem;
   text-shadow: 6px 6px 6px black;
 }
 
@@ -434,7 +458,7 @@ footer {
 #join_team{
   position: relative;
   /* border: black solid 2px; */
-  font-size: large;
+  font-size: 1.5rem;
   font-family: 'Shippori Antique B1', sans-serif;
   /* font-weight: bold; */
   /* text-align: center; */
@@ -444,7 +468,7 @@ footer {
 .why_us{
   /* border: black solid 2px; */
   width: 150px;
-  font-size: xx-large;
+  font-size: 2.5rem;
   font-weight: bolder;
   font-family: 'Shippori Antique B1', sans-serif;
 
@@ -454,7 +478,7 @@ footer {
 
 .apply-button{
   /* display: inline-block; */
-    padding: 15px 20px 15px 20px;
+    padding: 2% 2% 2% 2%;
     display: inline-block;
     /* justify-content: center; */
     background-color: #4CAF50;
@@ -479,12 +503,4 @@ footer {
 .apply_button:hover {
   background-color: #45a049;
   /* background-color: #226925; */
-}
-
-.button_box{
-  /* display: flex; */
-  /* justify-content: center; */
-  /* padding: 2px; */
-  /* border: solid black 2px; */
-  /* align-items: center; */
 }
