@@ -6,6 +6,7 @@ function generateNavbar() {
   navbar.setAttribute('id', 'navbar');
   
   navbar.innerHTML = `
+  <div id='logo-line'>
     <div id="logo">
       <img src="img/logo2.png" alt="WeAssureSecurity.com" />
     </div>
@@ -19,6 +20,7 @@ function generateNavbar() {
       <li class="item"><a href="careers.html">Careers</a></li>
       <li class="item"><a href="#contact">Contact Us</a></li>
     </ul>
+    </div>
   `;
   document.body.insertBefore(navbar, document.body.firstChild);
 }
