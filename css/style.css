@@ -138,7 +138,7 @@ html{
 }
 
 #home[data-page="index.html"]::before {
-  background-image: url('../img/career_bg.jpg');
+  background-image: url('../img/highway.jpg');
 }
 
 #home[data-page="careers.html"]::before {
