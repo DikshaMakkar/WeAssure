@@ -67,7 +67,7 @@ html {
 }
 
 span {
-  font-size: 1.3rem;
+  font-size: 1rem;
   /* padding-bottom: 5%; */
 }
 
@@ -108,7 +108,8 @@ span {
 
 h2 .center {
   width: 10%;
-  text-overflow: ellipsis;
+  /* text-overflow: ellipsis; */
+  font: 1.5rem;
 }
 /* Footer */
 
@@ -135,7 +136,7 @@ h2 .center {
     /* border: black solid 2px; */
     font-size: 1rem;
     font-family: 'Shippori Antique B1', sans-serif;
-    margin: 1% 1% 1%;
+    margin: 1% 0% 2% 1.5%;
   }
 
 .apply-button {
