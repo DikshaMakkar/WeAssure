@@ -130,6 +130,14 @@ h2 .center {
   padding: 1%;
 }
 
+#join_team{
+    /* position: relative; */
+    /* border: black solid 2px; */
+    font-size: 1rem;
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin: 1% 1% 1%;
+  }
+
 .apply-button {
   width: 15%;
 }
