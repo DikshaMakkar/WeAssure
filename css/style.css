@@ -60,6 +60,7 @@ html{
 }
 
 .logo-text{
+  display: flex;
   font-family: Arial;
   font-size: 1rem;
   width: 10%;
@@ -130,7 +131,7 @@ html{
 #home h1 {
   color: white;
   text-align: center;
-  margin-bottom: 32%;
+  margin-bottom: 15%;
   font-size: 80px;
   text-shadow: 3px 4px 5px rgb(209, 204, 204);
   /* font-family: "Inspiration", cursive; */
